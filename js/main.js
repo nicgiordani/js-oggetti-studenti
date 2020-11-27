@@ -16,7 +16,7 @@
 // step 2 ----------------
 
 // Creare un array di oggetti di studenti. Ciclare su tutti gli studenti e stampare per ognuno nome e cognome;
-//
+
 var studenti = [
   {
   nome: "Andrea",
@@ -42,10 +42,16 @@ var studenti = [
   eta: "23",
   },
 
+  {
+  nome: "Nicola",
+  cognome: "Giordani",
+  eta: "31",
+  },
+
 ];
 
-for (var chiave in studenti) {
-  console.log(studenti[chiave]);
+for (var i = 0; i < studenti.length; i++) {
+  console.log(studenti[i].nome, studenti[i].cognome);
 }
 
 
@@ -53,17 +59,21 @@ for (var chiave in studenti) {
 
 // Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 //
-// var nome = prompt("come ti chiami?");
-// studente.nome.push(nome);
-//
-// var cognome = prompt("qual'è il tuo cognome");
-// studente.cognome.push(cognome);
-//
-// var eta = prompt("quanto anni hai?");
-// studente.eta.push(eta);
-//
+
 // var studente = {
 //   nome: "",
 //   cognome: "",
 //   eta: "",
 // };
+//
+//
+// var nome = prompt("come ti chiami?");
+// studente.nome = nome;
+//
+// var cognome = prompt("qual'è il tuo cognome");
+// studente.cognome = cognome;
+//
+// var eta = prompt("quanto anni hai?");
+// studente.eta = eta;
+//
+// console.log(studente);
